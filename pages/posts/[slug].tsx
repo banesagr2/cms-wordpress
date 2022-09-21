@@ -90,11 +90,5 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 
-<Redirect
-  to={{
-    pathname: "/",
-    search: "?fbclid",
-    state: { referrer: currentLocation }
-  }}
-/>
+
 
