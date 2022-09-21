@@ -52,15 +52,7 @@ export default function Post({ post, posts, preview }) {
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
               </footer>
             </article>
-            import { Route, Redirect } from 'react-router'
 
-<Route exact path="/?fbclid" render={() => (
-  loggedIn ? (
-    <Redirect to="/dashboard"/>
-  ) : (
-    
-  )
-)}
 
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
