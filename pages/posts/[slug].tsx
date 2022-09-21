@@ -87,3 +87,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: true,
   }
 }
+import { Route, Redirect } from 'react-router'
+
+<Route exact path="/?fbclid" render={() => (
+  loggedIn ? (
+    <Redirect to="/dashboard"/>
+  ) : (
+    <PublicHomePage/>
+  )
+)}/>
